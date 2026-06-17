@@ -11,23 +11,16 @@ It’s built on the idea that every plant has a story, and discovering it should
 
 Brand Values
 Discovery — Encourages exploration and learning
-
 Clarity — Makes plant information simple and visual
-
 Warmth — Friendly tone, gentle colours, soft shapes
-
 Trust — Accurate data, reliable search, clean design
 
 Visual Identity
 Colour Direction
 A soft, modern palette inspired by nature and digital minimalism:
-
 Pastel Green (#CDE8C5) — freshness, growth
-
 Midnight Blue (#1A2A40) — depth, trust, contrast
-
 Blush Pink (#F2D7D9) — warmth, friendliness
-
 Gold Accent (#D9A441) — highlights, calls to action
 
 This palette feels botanical without being cliché.
@@ -62,7 +55,8 @@ Example tone:
 “Let’s explore this plant together.”
 “Here’s what makes this species special.”
 
-Tagline Options
+Tagline Options:
+
 Find the plants you love.
 
 Discover nature, one leaf at a time.
@@ -70,6 +64,7 @@ Discover nature, one leaf at a time.
 Search. Learn. Grow.
 
 Your pocket guide to the plant world.
+
 
 User Experience Style
 The UI should feel:
