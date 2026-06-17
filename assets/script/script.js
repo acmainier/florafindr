@@ -1,3 +1,34 @@
+function displayResult(data) {
+  const grid = document.getElementById("resultsGrid");
+  grid.innerHTML = "";
+
+  // Remove non-plant results that got through the initial fetch request
+  const plants = data.results.filter(
+    (taxon) => taxon.iconic_taxon_name === "Plantae",
+  );
+
+  // If no result
+  if (plants.length === 0) {
+    grid.innerHTML = "<p>No plant results found.</p>";
+    return;
+  }
+
+  plants.forEach((taxon) => {
+    const photoUrl = taxon.default_photo?.square_url ?? "";
+    const commonName = taxon.preferred_common_name ?? "Unknown";
+    const card = document.createElement("div");
+    card.classList.add("plant-card");
+    card.innerHTML = `
+      ${photoUrl ? `<img src="${photoUrl}" alt="${commonName}">` : ""}
+      <h3>Common name : ${commonName}</h3>
+      <p class="scientific-name">Scientific name : <em>${taxon.name}</em></p>
+      <p class="rank">${taxon.rank}</p>
+      ${taxon.wikipedia_url ? `<a href="${taxon.wikipedia_url}" target="_blank" rel="noopener">Wikipedia</a>` : ""}
+    `;
+    grid.appendChild(card);
+  });
+}
+
 function getPlant() {
   const plantname = document.getElementById("searchInput").value.trim();
 
@@ -18,7 +49,7 @@ function getPlant() {
         return response.json();
       })
       .then((data) => {
-        //displayResult(data);
+        displayResult(data);
         console.log(data);
       })
       .catch((error) => {
