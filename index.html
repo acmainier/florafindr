@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FloraFindr — Find your Flora</title>
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
     <header>
@@ -20,8 +21,9 @@
 
     <main>
       <section class="main-page">
-        <h1 class="Page-title">FloraFindr<span>.</span></h1>
-        <p class="tagline">A searchable Flora guide</p>
+        <img
+          src="logo.png"
+          alt="FloraFindr logo">
       </section>
 
       <search class="specimen">
@@ -54,7 +56,6 @@
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
           </button>
-          <ul class="suggest-list" id="suggestList" role="listbox" hidden></ul>
         </form>
         <menu class="actions">
           <li>
@@ -65,13 +66,13 @@
         </menu>
       </search>
 
-      <article class="chips" id="chips">
-        <button class="chip" data-cat="All">All</button>
-        <button class="chip" data-cat="Houseplants">Houseplants</button>
-        <button class="chip" data-cat="Succulents">Succulents</button>
-        <button class="chip" data-cat="Ferns">Ferns</button>
-        <button class="chip" data-cat="Trees">Trees</button>
-        <button class="chip" data-cat="Herbs">Herbs</button>
+     <article class="chips" id="chips">
+      <button class="chip" data-cat="Rosa">Rose</button>
+      <button class="chip" data-cat="Lavandula">Lavender</button>
+      <button class="chip" data-cat="Dryopteris">Fern</button>
+      <button class="chip" data-cat="Quercus">Oak</button>
+      <button class="chip" data-cat="Mentha">Mint</button>
+      <button class="chip" data-cat="Aloe">Aloe</button>
       </article>
 
       <section class="results" id="results">
